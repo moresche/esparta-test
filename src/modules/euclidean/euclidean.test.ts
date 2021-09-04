@@ -5,5 +5,5 @@ test("Should be defined", () => {
 });
 
 test(`Should return ${5}`, () => {
-    expect(countChocolatesEaten({ n: 10, m: 4 })).toBe(5);
+    expect(countChocolatesEaten({ N: 10, M: 4 })).toBe(5);
 });

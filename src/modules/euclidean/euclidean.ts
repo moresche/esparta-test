@@ -1,17 +1,17 @@
 import { INumber } from "../../@types/number";
 
-const countChocolatesEaten = ({ n, m }: INumber): number => {
-    const arr: number[] = [];
+const countChocolatesEaten = ({ N, M }: INumber): number => {
+    const chocolates: number[] = [];
     let counter = 0,
         index = 0;
 
-    for (let i = 0; i < n; i++) {
-        arr.push(counter);
+    for (let i = 0; i < N; i++) {
+        chocolates.push(counter);
     }
 
-    while (arr[index] === 0) {
-        arr[index] = 1;
-        index = (index + m) % n;
+    while (chocolates[index] === 0) {
+        chocolates[index] = 1;
+        index = (index + M) % N;
         counter++;
     }
 

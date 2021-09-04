@@ -1,4 +1,4 @@
 export interface INumber {
-    n: number;
-    m: number;
+    N: number;
+    M: number;
 }
